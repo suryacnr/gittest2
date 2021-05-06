@@ -17,7 +17,8 @@ many file provide at /robots.txt and /sitemap.xml help to navigate their site an
  directry listing them self is not security vulnerability but access control fail to implemnt porperly. in this way it clearly an issue
 
 3.Devloper comments:
-during devlopment, in-line html comments are added sometimes these must be striped after production. however comments are missed are forgotten .although these comments are not rendered in webpage but they may be easily accessed by burp or dev tools 
+during devlopment, in-line html comments are added sometimes these must be striped after production. however comments are missed are forgotten .
+although these comments are not rendered in webpage but they may be easily accessed by burp or dev tools 
 
  to solve this lab go to site map right click engagment tools and you can see find comments 
 

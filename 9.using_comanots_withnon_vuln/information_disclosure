@@ -1,4 +1,5 @@
-YOu should not be focusing only on one thing information disclouser can leek in all kind of flace so it important to not to miss anything later you will find often sensetive date will testing for something they skill is to recoganize intresting information 
+YOu should not be focusing only on one thing information disclouser can leek in all kind of flace so it important to not to miss anything later you will find often
+sensetive date will testing for something they skill is to recoganize intresting information 
 
 '''some of the tool can be used for information discloser'''
 1.fuzzing
@@ -10,10 +11,12 @@ YOu should not be focusing only on one thing information disclouser can leek in 
 common source of information discloser 
 
 1.file for web crawler :
-many file provide at /robots.txt and /sitemap.xml help to navigate their site and some help to skip some file and directory should not be seen my crawler try to navigate manually 
+many file provide at /robots.txt and /sitemap.xml help to navigate their site and some help to skip some file and directory should not be seen my crawler
+try to navigate manually 
 
 2.directry listings:
- Web servers can be configured to automatically list the contents of directories that do not have an index page present. This can aid an attacker by enabling them to quickly identify the resources at a given path, and proceed directly to analyzing and attacking those resources.
+ Web servers can be configured to automatically list the contents of directories that do not have an index page present. This can aid an attacker by enabling them
+ to quickly identify the resources at a given path, and proceed directly to analyzing and attacking those resources.
  directry listing them self is not security vulnerability but access control fail to implemnt porperly. in this way it clearly an issue
 
 3.Devloper comments:
@@ -27,7 +30,8 @@ although these comments are not rendered in webpage but they may be easily acces
   you should closely check all kind of error message you encountr
 
 5. debugging data :
-	for debugging purpuse many website contain custome error message and log file that contain large ammount information about the application behavior .This information is usefull for dev but also usefull for hackers.
+	for debugging purpuse many website contain custome error message and log file that contain large ammount information about the application behavior .
+	This information is usefull for dev but also usefull for hackers.
 	 Debug messages can sometimes contain vital information for developing an attack, including:
 
     *Values for key session variables that can be manipulated via user input
@@ -41,12 +45,16 @@ although these comments are not rendered in webpage but they may be easily acces
 	GET /user/personal-info?user=carlos
 	most website will take steps to prevent the parameter to change the user.but sometimes the logic for loading individual items of data is not as robust.
 7. Source code disclosure via backup files
-	Obtaining source code access makes it much easier for an attacker to understand the application's behavior and construct high-severity attacks.sensitive data can be hardcoded if you can find open source technology is being used. this provide easy access to a limint amount of source code
-	''' When a server handles files with a particular extension, such as .php, it will typically execute the code, rather than simply sending it to the client as text.'''to trick the server the you can simply append tild (~) to read the page
+	Obtaining source code access makes it much easier for an attacker to understand the application's behavior and construct high-severity attacks.
+	sensitive data can be hardcoded if you can find open source technology is being used. this provide easy access to a limint amount of source code
+	''' When a server handles files with a particular extension, such as .php, it will typically execute the code, rather than simply sending it to the client as
+	text.'''to trick the server the you can simply append tild (~) to read the page
 8. Information disclosure due to insecure configuration
-	 In Burp Repeater, browse to GET /admin. The response discloses that the admin panel is only accessible if logged in as an administrator, or if requested from a local IP. Send the request again, but this time use the TRACE method:
+	 In Burp Repeater, browse to GET /admin. The response discloses that the admin panel is only accessible if logged in as an administrator, 
+	 or if requested from a local IP. Send the request again, but this time use the TRACE method:
 	TRACE /admin 
-	Go to "Proxy" > "Options", scroll down to the "Match and Replace" section, and click "Add". Leave the match condition blank, but in the "Replace" field, enter X-Custom-IP-Authorization: 127.0.0.1. Burp Proxy will now add this header to every request you send. 
+	Go to "Proxy" > "Options", scroll down to the "Match and Replace" section, and click "Add". Leave the match condition blank, but in the "Replace" field,
+	enter X-Custom-IP-Authorization: 127.0.0.1. Burp Proxy will now add this header to every request you send. 
 
 9.
 

@@ -1,0 +1,1 @@
+first  cacha the request in burp for first time than forwardit it after that .that request will be in history tap open that  in cookie value you can see sid:en in responces tap you can see the cookie value with "sid:en" change it to "sid:en"alert('sxs');"sometext
